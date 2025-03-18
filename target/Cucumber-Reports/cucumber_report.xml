@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="19.286" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Order Placement on Demo Web Shop" name="User places an order successfully" time="19.269">
+<system-out><![CDATA[
+Given User launches website in a browser....................................passed
+When User clicks on the login link..........................................passed
+And User enters valid email "manas@haxa.com" and password "manas@11"........passed
+And User navigates to the Computer menu and clicks on Desktop...............passed
+And User selects the second desktop.........................................passed
+And User selects RAM and HDD options........................................passed
+And User clicks on "Add to Cart" button.....................................passed
+And User moves to the shopping cart menu....................................passed
+And User clicks on "Go to Cart" button......................................passed
+And User selects "I agree with terms" checkbox..............................passed
+And User clicks on "Checkout" button........................................passed
+And User fills in the required billing details..............................passed
+And User continue with shipping address.....................................passed
+And User confirms shipping method...........................................passed
+And User selects "Cash on Delivery" as the payment method...................passed
+And User confirms with payment information..................................passed
+And User clicks on "Confirm" button.........................................passed
+Then User should see success message........................................passed
+And User clicks on the logout button........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

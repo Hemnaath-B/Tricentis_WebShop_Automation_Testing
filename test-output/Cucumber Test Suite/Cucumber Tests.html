@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>TestNG:  Cucumber Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Cucumber Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 18 15:24:04 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>103 seconds (103860 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runners.ForgotPasswordTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.ForgotPasswordTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to reset password with an unregistered email", "Forgot Password Functionality"</td>
+<td></td>
+<td>4</td>
+<td>com.runners.ForgotPasswordTestRunner@3b35a229</td></tr>
+<tr>
+<td title='com.runners.RegistrationTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.RegistrationTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registration with invalid email", "User Registration"</td>
+<td></td>
+<td>3</td>
+<td>com.runners.RegistrationTestRunner@29f7cefd</td></tr>
+<tr>
+<td title='com.runners.SearchFilterTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.SearchFilterTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter results by alphabetical order", "Search and Filter Products"</td>
+<td></td>
+<td>5</td>
+<td>com.runners.SearchFilterTestRunner@9816741</td></tr>
+<tr>
+<td title='com.runners.HomePageTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.HomePageTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the homepage is functional", "Validate Functionality of Demo Web Shop"</td>
+<td></td>
+<td>6</td>
+<td>com.runners.HomePageTestRunner@1c9b0314</td></tr>
+<tr>
+<td title='com.runners.ForgotPasswordTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.ForgotPasswordTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully reset password with a registered email", "Forgot Password Functionality"</td>
+<td></td>
+<td>4</td>
+<td>com.runners.ForgotPasswordTestRunner@3b35a229</td></tr>
+<tr>
+<td title='com.runners.HomePageTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.HomePageTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute a successful product search", "Validate Functionality of Demo Web Shop"</td>
+<td></td>
+<td>4</td>
+<td>com.runners.HomePageTestRunner@1c9b0314</td></tr>
+<tr>
+<td title='com.runners.ProductDetailsTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.ProductDetailsTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add 14.1 inch Laptop to cart", "Validate product details and add to cart"</td>
+<td></td>
+<td>4</td>
+<td>com.runners.ProductDetailsTestRunner@13d73f29</td></tr>
+<tr>
+<td title='com.runners.LoginTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.LoginTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful Login with Valid Credentials", "Login and Forgot Password Functionality"</td>
+<td></td>
+<td>4</td>
+<td>com.runners.LoginTestRunner@700fb871</td></tr>
+<tr>
+<td title='com.runners.SearchFilterTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.SearchFilterTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter results by price", "Search and Filter Products"</td>
+<td></td>
+<td>5</td>
+<td>com.runners.SearchFilterTestRunner@9816741</td></tr>
+<tr>
+<td title='com.runners.OrderPlacementTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.OrderPlacementTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User places an order successfully", "Order Placement on Demo Web Shop"</td>
+<td></td>
+<td>19</td>
+<td>com.runners.OrderPlacementTestRunner@7dc3712</td></tr>
+<tr>
+<td title='com.runners.ForgotPasswordTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.ForgotPasswordTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Attempt to reset password with an empty email field", "Forgot Password Functionality"</td>
+<td></td>
+<td>4</td>
+<td>com.runners.ForgotPasswordTestRunner@3b35a229</td></tr>
+<tr>
+<td title='com.runners.AdvancedSearchTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.AdvancedSearchTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Perform advanced search", "Advanced Search Filter Products"</td>
+<td></td>
+<td>6</td>
+<td>com.runners.AdvancedSearchTestRunner@1e16c0aa</td></tr>
+<tr>
+<td title='com.runners.RegistrationTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.RegistrationTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful registration", "User Registration"</td>
+<td></td>
+<td>4</td>
+<td>com.runners.RegistrationTestRunner@29f7cefd</td></tr>
+<tr>
+<td title='com.runners.LoginTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.LoginTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Failed Login with Invalid Credentials", "Login and Forgot Password Functionality"</td>
+<td></td>
+<td>4</td>
+<td>com.runners.LoginTestRunner@700fb871</td></tr>
+<tr>
+<td title='com.runners.ShoppingCartTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.ShoppingCartTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add an item to the shopping cart and proceed to checkout", "Shopping Cart Functionality"</td>
+<td></td>
+<td>10</td>
+<td>com.runners.ShoppingCartTestRunner@565f390</td></tr>
+<tr>
+<td title='com.runners.RegistrationTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.RegistrationTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registration with Existing User Account", "User Registration"</td>
+<td></td>
+<td>4</td>
+<td>com.runners.RegistrationTestRunner@29f7cefd</td></tr>
+<tr>
+<td title='com.runners.ProductDetailsTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.ProductDetailsTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate 14.1 inch Laptop details", "Validate product details and add to cart"</td>
+<td></td>
+<td>4</td>
+<td>com.runners.ProductDetailsTestRunner@13d73f29</td></tr>
+</table><p>
+</body>
+</html>
